@@ -1,0 +1,155 @@
+/* Menu Page Styles */
+.menu {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.menu-hero {
+  background: linear-gradient(rgba(139, 69, 19, 0.8), rgba(139, 69, 19, 0.8)),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%23D2691E" width="1200" height="400"/><text x="600" y="200" text-anchor="middle" fill="white" font-size="36" font-family="serif">Delicious Cuisine</text></svg>');
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0 4rem;
+  text-align: center;
+  color: white;
+}
+
+.menu-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu-hero p {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.menu-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.menu-section {
+  margin-bottom: 4rem;
+  background: white;
+  border-radius: 15px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+.menu-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  position: relative;
+}
+
+.menu-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 2px;
+}
+
+.menu-items {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.menu-item {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition);
+  border-radius: 8px;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item:hover {
+  background-color: rgba(139, 69, 19, 0.05);
+  transform: translateX(5px);
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.menu-item h3 {
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  white-space: nowrap;
+}
+
+.description {
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .menu-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .menu-container {
+    padding: 2rem 1rem;
+  }
+  
+  .menu-section {
+    padding: 2rem 1.5rem;
+  }
+  
+  .menu-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .menu-item h3 {
+    font-size: 1.2rem;
+  }
+  
+  .price {
+    font-size: 1.1rem;
+  }
+  
+  .description {
+    font-size: 0.95rem;
+  }
+}

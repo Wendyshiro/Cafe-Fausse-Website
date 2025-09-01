@@ -1,0 +1,210 @@
+/* Reservations Page Styles */
+.reservations {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.reservations-hero {
+  background: linear-gradient(rgba(139, 69, 19, 0.8), rgba(139, 69, 19, 0.8)),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%23CD853F" width="1200" height="400"/><text x="600" y="200" text-anchor="middle" fill="white" font-size="36" font-family="serif">Reserve Your Table</text></svg>');
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0 4rem;
+  text-align: center;
+  color: white;
+}
+
+.reservations-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.reservations-hero p {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.reservations-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.reservation-info {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.reservation-info h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.info-item {
+  margin-bottom: 2rem;
+}
+
+.info-item h3 {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.info-item p {
+  color: var(--text-dark);
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.reservation-form {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+.reservation-form h2 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: var(--transition);
+  background-color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
+}
+
+.form-group input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1.2rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+.submit-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.submit-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.reservation-form .message {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.reservation-form .message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.reservation-form .message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .reservations-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .reservations-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .reservations-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+  
+  .reservation-info {
+    position: static;
+    order: 2;
+  }
+  
+  .reservation-form {
+    padding: 2rem 1.5rem;
+    order: 1;
+  }
+  
+  .reservation-form h2 {
+    font-size: 1.6rem;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 0.9rem;
+  }
+  
+  .submit-button {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
