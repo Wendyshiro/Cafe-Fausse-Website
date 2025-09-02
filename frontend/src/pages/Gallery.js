@@ -8,12 +8,12 @@ const Gallery = () => {
     { id: 1, src: '/images/gallery-cafe-interior.webp', alt: 'Elegant dining room with warm lighting', category: 'interior' },
     { id: 2, src: '/images/gallery-ribeye-steak.webp', alt: 'Perfectly cooked ribeye steak', category: 'food' },
     { id: 3, src: '/images/gallery-special-event.webp', alt: 'Special dining event', category: 'events' },
-    // Placeholder images for AI generation later
-    { id: 4, src: '/images/grilled-salmon.jpg', alt: 'Grilled salmon with seasonal vegetables', category: 'food', placeholder: true },
-    { id: 5, src: '/images/kitchen-action.jpg', alt: 'Chef preparing dishes in the kitchen', category: 'behind-scenes', placeholder: true },
-    { id: 6, src: '/images/tiramisu.jpg', alt: 'Classic tiramisu dessert', category: 'food', placeholder: true },
-    { id: 7, src: '/images/wine-selection.jpg', alt: 'Curated wine selection', category: 'beverages', placeholder: true },
-    { id: 8, src: '/images/vegetable-risotto.jpg', alt: 'Creamy vegetable risotto', category: 'food', placeholder: true }
+    // AI generated images
+    { id: 4, src: '/images/grilled-salmon.png', alt: 'Grilled salmon with seasonal vegetables', category: 'food' },
+    { id: 5, src: '/images/kitchen-action.png', alt: 'Chef preparing dishes in the kitchen', category: 'behind-scenes' },
+    { id: 6, src: '/images/tiramisu.png', alt: 'Classic tiramisu dessert', category: 'food' },
+    { id: 7, src: '/images/wine-selection.png', alt: 'Curated wine selection', category: 'beverages' },
+    { id: 8, src: '/images/creamy-rissotto.png', alt: 'Creamy vegetable risotto', category: 'food' }
   ];
 
   const awards = [

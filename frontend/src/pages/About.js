@@ -31,7 +31,11 @@ const About = () => {
           <div className="founder-profiles">
             <div className="founder">
               <div className="founder-image">
-                <div className="placeholder-image">Chef Antonio Rossi</div>
+                <img 
+                  src="/images/Chef-Antonio.png" 
+                  alt="Chef Antonio Rossi" 
+                  className="chef-photo"
+                />
               </div>
               <div className="founder-info">
                 <h3>Chef Antonio Rossi</h3>
@@ -52,7 +56,11 @@ const About = () => {
 
             <div className="founder">
               <div className="founder-image">
-                <div className="placeholder-image">Maria Lopez</div>
+                <img 
+                  src="/images/Maria-Lopez.png" 
+                  alt="Maria Lopez" 
+                  className="chef-photo"
+                />
               </div>
               <div className="founder-info">
                 <h3>Maria Lopez</h3>

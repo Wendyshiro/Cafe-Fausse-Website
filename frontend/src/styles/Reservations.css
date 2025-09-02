@@ -5,8 +5,7 @@
 }
 
 .reservations-hero {
-  background: linear-gradient(rgba(139, 69, 19, 0.8), rgba(139, 69, 19, 0.8)),
-              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%23CD853F" width="1200" height="400"/><text x="600" y="200" text-anchor="middle" fill="white" font-size="36" font-family="serif">Reserve Your Table</text></svg>');
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   background-size: cover;
   background-position: center;
   padding: 6rem 0 4rem;
